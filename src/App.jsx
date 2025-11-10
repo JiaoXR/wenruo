@@ -1,17 +1,22 @@
-import Hero from './components/Hero'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Header from './components/Header.jsx'
+import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
+import Projects from './components/Projects.jsx'
+import Contact from './components/Contact.jsx'
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-dark-bg">
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+    <div className="bg-dark-bg text-white">
+      <Header />
+      <main className="pt-14">
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
     </div>
   )
 }
 
-export default App
